@@ -1,4 +1,15 @@
-.cell {
-  background: red;
-  border: 5px solid green;
+/**{outline:1px solid red;}*/
+
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Signika:300');
+body {
+  font-family: 'Signika', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Crimson Text', serif;
+}
+h1 {
+  font-size: 1.35rem;
+}
+p {
+  line-height: 1.25em;
 }
