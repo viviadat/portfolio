@@ -1,15 +1,151 @@
 /**{outline:1px solid red;}*/
 
-@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Signika:300');
+@import url('https://fonts.googleapis.com/css?family=Istok+Web|Lora');
 body {
   font-family: 'Signika', sans-serif;
+  background:url(../img/bg.png) no-repeat center center fixed;
+  background-size: cover;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Crimson Text', serif;
+h1, h2, h3, h4, h5, h6, a {
+  font-family: 'Lora', serif;
 }
 h1 {
-  font-size: 1.35rem;
+  font-size: 4.5em;
 }
-p {
+p, a {
   line-height: 1.25em;
+  font-family: 'Istok Web', sans-serif;
+}
+
+li {
+  border-radius: 0;
+  font-size: 1.5em;
+  border-bottom: 15px solid #ffe287;
+  margin-bottom: 20px;
+  margin-top: -20px;
+  text-align: center;
+}
+li a:link, li a:visited {
+  color: #000;
+  background-color: rgba(211, 211, 211, .4);
+  border-radius: 3px;
+  text-decoration: none;
+  padding: 4px 6px;
+  margin: 1px;
+  font-size: 1.2em;
+}
+li a:hover {
+  color: #000;
+  background-color: rgba(255, 245, 181, .8);
+  text-decoration: none;
+}
+footer {
+  font-size: .7em;
+}
+.bg {
+  background-color: rgba(255, 255, 255, .8);
+}
+.navindex {
+  margin-top: -100px;
+}
+.tpadding {
+  padding-top: 2.5em;
+}
+
+.tpadding1 {
+  padding-top: 1em;
+}
+
+.tcenter {
+  text-align:center;
+}
+.tright {
+  text-align:right;
+}
+
+.valign {
+  display: block;
+  margin: auto;
+}
+
+.bborder {
+  border-bottom: 15px solid #ffe287;
+  padding-bottom: 4em;
+}
+.logo {
+  width: 75%;
+  height: 75%;
+  filter: drop-shadow( 0 6px 7px #7c7d7f );
+}
+.bracketp{
+  padding-top: 3em;
+}
+
+
+/*INDEX KEYFRAMES AND LINKS*/
+.animate {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.logoa{
+  animation-delay: 0.5s;
+}
+.delay {
+  animation-delay: 1.5s;
+}
+.fadeInDown {
+  animation-name: fadeInDown;
+ }
+
+@keyframes fadeInDown {
+0% {
+	opacity: 0;
+	transform: translate3d(0, -100%, 0);
+}
+100% {
+	opacity: 1;
+	transform: none;
+}
+}
+.fadeIn {
+	animation-name: fadeIn;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/*NAV LINKS*/
+h2 a:link, h2 a:visited {
+  color: #000;
+  background-color: rgba(211, 211, 211, .4);
+  border-radius: 3px;
+  text-decoration: none;
+  padding: 2px 6px;
+  margin: 1px;
+  font-size: 1.2em;
+}
+h2 a:hover {
+  color: #000;
+  background-color: rgba(255, 245, 181, .8);
+  text-decoration: none;
+}
+
+/*PORTFOLIO HOVER*/
+.circle:hover {
+  transition:all 0.3s ease;
+  border-radius:50%;
+  filter: none;
+}
+
+.bw {
+   filter: grayscale(100%);
+   border: 2px dashed rgba(211, 211, 211, .4);
+   padding: 10px;
 }
