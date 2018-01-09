@@ -41,6 +41,7 @@ li a:hover {
 }
 footer {
   font-size: .7em;
+  margin-top: 10px;
 }
 .bg {
   background-color: rgba(255, 255, 255, .8);
@@ -148,4 +149,19 @@ h2 a:hover {
    filter: grayscale(100%);
    border: 2px dashed rgba(211, 211, 211, .4);
    padding: 10px;
+}
+
+/*contact form*/
+.buttonsub a:link, .buttonsub a:visited {
+  color: #000;
+  background-color: rgba(255, 245, 181, .8);
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
+  margin-bottom: 10px;
+}
+.buttonsub a:hover {
+  color: #000;
+  background-color: rgba(211, 211, 211, .4);
+  text-decoration: none;
 }
